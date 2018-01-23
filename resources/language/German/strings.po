@@ -1,0 +1,50 @@
+# XBMC Media Center language file
+# Addon Name: Now Playing
+# Addon id: script.nowplaying
+# Addon version: x
+# Addon Provider: Paulemann
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "#30000"
+msgid "General"
+msgstr "Allgemein"
+
+msgctxt "#30006"
+msgid "PVR client port (see config of PVR backend)"
+msgstr "PVR Client Port (siehe Konf. PVR Backend)"
+
+msgctxt "#30050"
+msgid "Select kodi client to stop playback"
+msgstr "Zum Anhalten der Wiedergabe, einen Kodi Client auswählen"
+
+msgctxt "#30051"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "#30052"
+msgid "Cancel"
+msgstr "Abbruch"
+
+msgctxt "#30053"
+msgid "No playback currently"
+msgstr "Zurzeit findet keine Wiedergabe statt"
+
+msgctxt "#30054"
+msgid "TV Recording"
+msgstr "TV-Aufnahme"
+
+msgctxt "#30055"
+msgid "The current playback was intentionally stopped."
+msgstr "Die aktuelle Wiedergabe wurde absichtlich beendet."

@@ -224,6 +224,11 @@ if __name__ == '__main__':
                 except:
                     item = '{} (IP: {}): \"{}\" ({})'.format(hostname, host, data['item']['label'].encode('utf-8'), data['item']['type'])
 
+                tdata = json_request('Player.GetProperties',{'properties': ['time', 'totaltime'], 'playerid': player_id}, host)
+                if tdata:
+                    item = '{} @ {:02d}:{:02d}:{:02d} / {:02d}:{:02d}:{:02d}'.format(item, tdata['time']['hours'], tdata['time']['minutes'], tdata['time']['seconds'], \
+                                                           tdata['totaltime']['hours'], tdata['totaltime']['minutes'], tdata['totaltime']['seconds'])
+
                 hosts.append(host)
                 items.append(item)
 

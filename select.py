@@ -131,7 +131,7 @@ def mixed_decoder(unicode_error):
 
 codecs.register_error('mixed', mixed_decoder)
 
-def json_request(method, params, host, port=8080):
+def json_request(method, params, host, port=8080, username=None, password=None):
 
     url    =    'http://{}:{}/jsonrpc'.format(host, port)
     header =    {'Content-Type': 'application/json'}
@@ -143,6 +143,10 @@ def json_request(method, params, host, port=8080):
 
     if params:
         jsondata['params'] = params
+
+    if username and password:
+        base64str = base64.encodestring('{}:{}'.format(username, password))[:-1]
+        header['Authorization'] = 'Basic {}'.format(base64str)
 
     try:
         request = urllib2.Request(url, json.dumps(jsondata), header)

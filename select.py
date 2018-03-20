@@ -17,9 +17,8 @@ import codecs
 import pyxbmct.addonwindow as pyxbmct
 
 from datetime import datetime
+import _strptime
 from contextlib import closing
-
-
 
 
 __addon__ = xbmcaddon.Addon()
@@ -37,7 +36,7 @@ pyxbmct.skin.estuary = True
 
 
 def convert_date(t_str, t_fmt_in, t_fmt_out):
-    ##Legacy check, Python 2.4 does not have strptime attribute, instroduced in 2.5
+    ##Legacy check, Python 2.4 does not have strptime attribute, introduced in 2.5
     #if hasattr(datetime, 'strptime'):
     #    strptime = datetime.strptime
     #else:
